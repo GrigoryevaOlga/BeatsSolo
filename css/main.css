@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  width: containerWidth;
+  width: 940px;
   margin: 0 auto;
   position: relative;
 }
@@ -162,7 +162,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 158px;
+  margin-right: 28px;
 }
 
 .phone-number__icon-elem {
@@ -487,6 +487,9 @@ header {
   display: flex;
   margin-bottom: 36px;
 }
+.form__row:last-child {
+  margin-bottom: 0;
+}
 
 .form__block {
   -webkit-box-flex: 1;
@@ -511,6 +514,7 @@ header {
   border: none;
   padding: 18px 12px;
   border: 3px solid transparent;
+  border-radius: 4px;
 }
 .form__input--textarea {
   height: 152px;
@@ -529,6 +533,9 @@ header {
       flex-wrap: wrap;
   margin-bottom: 24px;
 }
+.form__controls--checkbox {
+  margin-bottom: 48px;
+}
 
 .radio {
   display: -webkit-box;
@@ -541,8 +548,8 @@ header {
           user-select: none;
   margin-right: 10px;
 }
-.radio--checkbox {
-  margin-bottom: 48px;
+.radio:last-child {
+  margin-right: 0;
 }
 .radio--checkbox .radio__visible {
   border-radius: 4px;
@@ -588,13 +595,16 @@ header {
 
 .fixed-menu {
   position: fixed;
-  top: 37%;
-  right: 9%;
+  top: 36%;
+  right: 2%;
   z-index: 100;
 }
 
 .fixed-menu__item {
   margin-bottom: 3px;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #E01F3D;

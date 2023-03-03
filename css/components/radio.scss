@@ -4,8 +4,12 @@
     user-select: none;
     margin-right: 10px;
 
+    &:last-child{
+        margin-right: 0;
+    }
+
     &--checkbox {
-        margin-bottom: 48px;
+    
         .radio__visible {
             border-radius: 4px;
 

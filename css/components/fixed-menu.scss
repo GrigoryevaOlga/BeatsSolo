@@ -1,12 +1,16 @@
 .fixed-menu {
     position: fixed;
-    top: 37%;
-    right: 9%;
+    top: 36%;
+    right: 2%;
     z-index: $z-fixed-menu;
 }
 
 .fixed-menu__item {
     margin-bottom: 3px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
     
     &--active{
         .fixed-menu__link{

@@ -20,7 +20,7 @@ body {
 }
 
 .container{
-    width: containerWidth;
+    width: $containerwidth ;
     margin: 0 auto;
     position: relative;
 }
