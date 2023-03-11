@@ -1,19 +1,51 @@
 .hero {
     background-color: $grey;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     color: #292929;
-    position:relative;
+    position: relative;
 
-&:before {
-    content: url("../img/Restangle 14.png");
-    position: absolute;
-    bottom:-40px;
-    right: 2%;
+    &:after {
+        @include tablets {
+            display: none;
+        }
+    }
+
+    &:before {
+        content: url("../img/r.png");
+        position: absolute;
+        bottom: rem(-20px);
+        right: 10%;
+    }
 }
-}
-.hero__title-section{
+
+.hero__title-section {
     width: 41%;
+
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &:before {
+            content: "";
+            width: rem(323px);
+            height: rem(323px);
+            background: url("../img/Ellipse 5 tablets.png") center center /contain no-repeat;
+            margin-bottom: rem(60px);
+
+        }
+    }
+}
+
+.hero__icons-section {
+    @include tablets {
+        display: none;
+    }
 }
 
 .hero__container {
@@ -21,21 +53,43 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 24px 0 70px 0;
+    padding: rem(24px) 0 rem(70px) 0;
     background: url("../img/Ellipse 5.png") right center / 40% auto no-repeat;
+
+    @include tablets {
+        background: none;
+    }
 }
 
 .hero__main-title {
-    font-size: 48px;
-    line-height: 52px;
+    font-size: rem(48px);
+    line-height: rem(52px);
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 22px;
+    margin-bottom: rem(7px);
+
+    @include tablets {
+        padding: 0 8%;
+    }
+
+    @include phones {
+        font-size: 32px;
+        line-height: 36px;
+        padding: 0 10%
+    }
 }
 
 .hero__title-desc {
-    font-size: 21px;
-    line-height: 25px;
-    margin-bottom: 49px;
+    font-size: rem(21px);
+    line-height: rem(25px);
+    margin-bottom: rem(36px);
     padding-right: 13%;
+
+    @include tablets {
+        padding: 0 23%;
+    }
+
+    @include phones {
+        padding: 0 10%;
+    }
 }

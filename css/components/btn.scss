@@ -1,10 +1,10 @@
 .btn {
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: bold;
     color: #FFFFFF;
-    padding: 18px 41px;
+    padding: rem(18px) rem(41px);
     text-transform: uppercase;
-    border-radius: 100px;
+    border-radius: rem(100px);
     line-height: 1;
     text-decoration: none;
     background: #E01F3D;
@@ -16,9 +16,9 @@
 
     &--theme--transparent{
         background: transparent;
-        font-size: 16px;
+        font-size: rem(16px);
         font-weight: 400;
-        line-height: 19px;
+        line-height: rem(19px);
         text-transform: none;
     }
 

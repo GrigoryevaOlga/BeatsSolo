@@ -1,13 +1,23 @@
+html{
+    font-size: $baseFontSize;
+
+    @include tablets{
+        font-size: $baseFontSize - 1px;
+    }
+
+    @include phones{
+        font-size: $baseFontSize - 2px;
+    }
+}
+
 html,
 body {
     height: 100%;
 }
 
 body {
-    font-size: $baseFontSize;
-    font-family: "Play", Arial, Helvetica, sans-serif;
-    line-height: 18.51px;
-    -webkit-font-smoothing: antialiased;
+   font-family: "Play", Arial, Helvetica, sans-serif;
+   -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
 }
@@ -20,7 +30,8 @@ body {
 }
 
 .container{
-    width: $containerwidth ;
+    width: 95%;
+    max-width: $containerwidth ;
     margin: 0 auto;
     position: relative;
 }

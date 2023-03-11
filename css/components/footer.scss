@@ -1,0 +1,52 @@
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+
+    @include tablets{
+        margin-bottom: rem(28px);
+    }
+
+    @include phones{
+        flex-direction: column;
+    }
+}
+
+.contacts{
+    font-style: normal;
+
+    @include phones{
+        margin-bottom: rem(20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contacts__adress{
+    @include phones{
+        margin-bottom: 12px;
+    }
+}
+.phone-number__text{
+    @include tablets{
+        color:#E01F3D
+    }
+
+    @include phones{
+        color:#292929
+    }
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+
+    @include phones{
+        justify-content: center;
+    }
+}
+
+.socials__item{
+    margin-right: rem(10px);
+}
