@@ -301,6 +301,7 @@ img {
 
 .feature__icon {
   width: 2.0555555556rem;
+  height: 40px;
   margin-right: 1rem;
 }
 
@@ -308,6 +309,11 @@ img {
   font-size: 0.8888888889rem;
   line-height: 1rem;
   max-width: 6.3333333333rem;
+}
+
+.feature__img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .btn {
@@ -426,6 +432,11 @@ img {
   right: 0;
   -webkit-transform: translatex(50%);
           transform: translatex(50%);
+}
+@media screen and (max-width: 768px) {
+  .benefits__item:before {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
   .benefits__item:before {
