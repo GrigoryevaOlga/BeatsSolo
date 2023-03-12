@@ -209,6 +209,11 @@ img {
           justify-content: space-between;
 }
 
+.logo {
+  width: 2.2222222222rem;
+  height: 2.2222222222rem;
+}
+
 .menu {
   margin: 0 30px;
 }
