@@ -429,6 +429,9 @@ img {
     padding: 0;
     margin-bottom: 1.1111111111rem;
   }
+  .benefits__item:last-child {
+    margin-bottom: 0;
+  }
 }
 .benefits__item:before {
   content: url("../img/Combined shape 2204.png");
@@ -479,6 +482,11 @@ img {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 1.3333333333rem;
+}
+@media screen and (max-width: 480px) {
+  .benefit__image-wrapper:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .benefit__title {
@@ -591,6 +599,11 @@ img {
           flex: 1;
   margin-left: 2.2222222222rem;
 }
+@media screen and (max-width: 480px) {
+  .reviews__content {
+    margin-left: 0;
+  }
+}
 
 .reviews__title {
   font-weight: bold;
@@ -696,6 +709,11 @@ img {
 @media screen and (max-width: 768px) {
   .form__col {
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__col {
+    margin-bottom: 16px;
   }
 }
 
@@ -896,6 +914,9 @@ img {
 }
 
 .hamburger {
+  position: fixed;
+  top: 4%;
+  right: 4%;
   width: 26px;
   height: 20px;
   -webkit-box-orient: vertical;
@@ -921,6 +942,11 @@ img {
   background: #292929;
   height: 4px;
   border-radius: 10px;
+}
+
+.footer {
+  position: absolute;
+  top: 97%;
 }
 
 .footer__container {
@@ -1000,4 +1026,7 @@ img {
 
 .socials__item {
   margin-right: 0.5555555556rem;
+}
+.socials__item:last-child {
+  margin-right: 0;
 }

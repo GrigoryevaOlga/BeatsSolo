@@ -1,3 +1,8 @@
+.footer{
+    position: absolute;
+    top:97%;
+}
+
 .footer__container{
     display: flex;
     justify-content: space-between;
@@ -49,4 +54,8 @@
 
 .socials__item{
     margin-right: rem(10px);
+
+     &:last-child{
+        margin-right: 0;
+     }
 }

@@ -16,6 +16,12 @@
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: rem(24px);
+
+    @include phones{
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
 }
 
 .benefit__title {

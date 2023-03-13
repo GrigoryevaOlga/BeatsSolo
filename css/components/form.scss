@@ -22,6 +22,10 @@
     @include tablets{
         margin-right: 0;
     }
+
+    @include phones{
+        margin-bottom: 16px;
+    }
 }
 
 .form__row {
