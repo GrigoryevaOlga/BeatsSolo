@@ -306,7 +306,7 @@ img {
 
 .feature__icon {
   width: 2.0555555556rem;
-  height: 40px;
+  height: 2.2222222222rem;
   margin-right: 1rem;
 }
 
@@ -709,11 +709,12 @@ img {
 @media screen and (max-width: 768px) {
   .form__col {
     margin-right: 0;
+    margin-bottom: 0.8888888889rem;
   }
 }
 @media screen and (max-width: 480px) {
   .form__col {
-    margin-bottom: 16px;
+    margin-bottom: 0.8888888889rem;
   }
 }
 
@@ -737,7 +738,7 @@ img {
   margin-right: 0;
 }
 .form__block--textarea {
-  margin-bottom: 20px;
+  margin-bottom: 1.1111111111rem;
 }
 
 .form__title {
@@ -917,8 +918,8 @@ img {
   position: fixed;
   top: 4%;
   right: 4%;
-  width: 26px;
-  height: 20px;
+  width: 1.4444444444rem;
+  height: 1.1111111111rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -927,7 +928,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   display: none;
-  margin-top: 7px;
+  margin-top: 0.3888888889rem;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -940,8 +941,8 @@ img {
 .hamburger__plank {
   display: block;
   background: #292929;
-  height: 4px;
-  border-radius: 10px;
+  height: 0.2222222222rem;
+  border-radius: 0.5555555556rem;
 }
 
 .footer {
@@ -956,7 +957,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 18px;
+  margin-bottom: 1rem;
 }
 @media screen and (max-width: 768px) {
   .footer__container {
@@ -993,7 +994,7 @@ img {
 
 @media screen and (max-width: 480px) {
   .contacts__adress {
-    margin-bottom: 12px;
+    margin-bottom: 0.6666666667rem;
   }
 }
 

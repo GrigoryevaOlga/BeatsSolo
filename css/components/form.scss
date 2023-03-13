@@ -21,10 +21,11 @@
 
     @include tablets{
         margin-right: 0;
+        margin-bottom: rem(16px);
     }
 
     @include phones{
-        margin-bottom: 16px;
+        margin-bottom: rem(16px);
     }
 }
 
@@ -46,7 +47,7 @@
     }
 
     &--textarea{
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
     }
 }
 

@@ -2,12 +2,12 @@
     position: fixed;
     top: 4%;
     right: 4%;
-    width: 26px;
-    height: 20px;
+    width: rem(26px);
+    height: rem(20px);
     flex-direction: column;
     justify-content: space-between;
     display: none;
-    margin-top: 7px;
+    margin-top: rem(7px);
 
     @include tablets{
         display: inline-flex;
@@ -17,6 +17,6 @@
 .hamburger__plank{
     display: block;
     background: #292929;
-    height: 4px;
-    border-radius: 10px;
+    height: rem(4px);
+    border-radius: rem(10px);
 }

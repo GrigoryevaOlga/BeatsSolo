@@ -6,7 +6,7 @@
 .footer__container{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 18px;
+    margin-bottom: rem(18px);
 
     @include tablets{
         margin-bottom: rem(28px);
@@ -30,7 +30,7 @@
 
 .contacts__adress{
     @include phones{
-        margin-bottom: 12px;
+        margin-bottom: rem(12px);
     }
 }
 .phone-number__text{

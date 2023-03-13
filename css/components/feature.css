@@ -1,4 +1,4 @@
 .feature__icon {
-  width: 45px;
-  margin-right: 7px;
+  width: rem(45px);
+  margin-right: rem(7px);
 }
