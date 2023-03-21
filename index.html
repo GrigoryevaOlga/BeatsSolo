@@ -19,7 +19,7 @@
                         <svg class="logo">
                             <use xlink:href="img/sprite.svg#logo"></use>
                         </svg>
-                        <nav class=menu>
+                        <nav class=menu id="hamburgerMenu">
                             <ul class=menu__list>
                                 <li class=menu__item>
                                     <a href="#" class="menu__link">О нас</a>
@@ -136,7 +136,7 @@
                                     <svg class="benefit__icon">
                                         <use xlink:href="img/sprite.svg#feat-3">
                                     </svg>
-                               </div>
+                                </div>
                             </div>
                             <div class="benefit__text">
                                 <h3 class="benefit__title">Быстрая зарядка</h3>
@@ -148,6 +148,86 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+            </section>
+            <section class="section products-section">
+                <div class="container product__container">
+                    <div class="products-slider">
+                        <div class="product-slider__arrows">
+                            <a href="#" class="product-slider__arrow product-slider__arrow--direction--prev">
+                                <img src="./img/left.png" alt="left">
+                            </a>
+                            <ul class="products">
+                                <li class="products__item product">
+                                    <div class="product__img">
+                                        <img src="./img/Ellipse 6.png" class="prodact__img-picture" alt="">
+                                    </div>
+                                    <div class="product__components">
+                                        <div class="product__menu">
+                                            <img src="./img/click.png" class="prodact__menu-img" alt="">
+                                            <div class="prodact__menu-items">
+                                                <ul class="product__list">
+                                                    <li class="product__list-items">
+                                                        <img src="./img/blut.png" class="product__list-logo" alt="b">
+                                                        <p class="product__list-text">Bluetooth </p>
+                                                        <div class="product__list-item"> 4.0</div>
+                                                    </li>
+                                                    <li class="product__list-items">
+                                                        <img src="./img/nut.png" class="product__list-logo" alt="b">
+                                                        <p class="product__list-text">Дальность</p>
+                                                        <div class="product__list-item"> 12 м</div>
+                                                    </li>
+                                                    <li class="product__list-items">
+                                                        <img src="./img/z.png" class="product__list-logo" alt="b">
+                                                        <p class="product__list-text">Зарядка</p>
+                                                        <div class="product__list-item"> 3 ч</div>
+                                                    </li>
+                                                    <li class="product__list-items">
+                                                        <img src="./img/kg 1.png" class="product__list-logo" alt="b">
+                                                        <p class="product__list-text">Вес</p>
+                                                        <div class="product__list-item">215гр</div>
+                                                    </li>
+                                                    <li class="product__list-items">
+                                                        <img src="./img/apitherapy.png" class="product__list-logo"
+                                                            alt="b">
+                                                        <p class="product__list-text">Гарантия</p>
+                                                        <div class="product__list-item">1 год</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h3 class="product__title"> beats solo 3. цвет
+                                                «атласное серебро»</h3>
+                                        </div>
+                                        <div class="product__text">
+                                            <p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент.
+                                                Включите их
+                                                и
+                                                поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
+                                        </div>
+                                        <div class="product__features">
+                                            <ul class="product__features-item">
+                                                <li class="product__feautures-item-name"> Зарядка</li>
+                                                <li class="product__feautures-item-text"> 2 часа </li>
+                                            </ul>
+                                            <ul class="product__features-item">
+                                                <li class="product__feautures-item-name"> Вес</li>
+                                                <li class="product__feautures-item-text"> 215 грамм </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product__shop">
+                                            <div class="product__shop-price"> 14 990 ₽</div>
+                                            <button class="btn">ЗАКАЗАТЬ</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="product-slider__arrow product-slider__arrow--direction--next">
+                                <img src="./img/right.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class=section>
@@ -190,7 +270,6 @@
                                 </a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </section>
@@ -283,7 +362,6 @@
                         <ul class="socials">
                             <li class="socials__item">
                                 <a href="#" class="social__link">
-    
                                     <img src="./img/vk.png" alt="social icon-vk">
                                 </a>
                             </li>
@@ -306,7 +384,6 @@
                     </div>
                 </footer>
             </section>
-            
         </div>
     </div>
     <nav class="fixed-menu">
@@ -323,11 +400,34 @@
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
         </ul>
     </nav>
-    <a href="" class="hamburger">
+    <div class="hamburger" id="hamburger">
         <span class="hamburger__plank"></span>
         <span class="hamburger__plank"></span>
         <span class="hamburger__plank"></span>
-    </a>
+    </div>
+
+    <script>
+
+        let hamburger = document.querySelector('.hamburger');
+        let menu = document.querySelector('.menu');
+        let body = document.querySelector('body');
+
+        let links = document.querySelectorAll('.menu__link');
+
+        links.forEach(function (element) {
+            element.addEventListener('click', toggleMenu);
+        })
+
+        function toggleMenu() {
+            hamburger.classList.toggle('hamburger--active');
+            menu.classList.toggle('menu--active');
+            body.classList.toggle('body--active-menu');
+        }
+
+        hamburger.addEventListener('click', toggleMenu);
+
+    </script>
+
 </body>
 
 </html>
