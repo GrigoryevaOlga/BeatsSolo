@@ -1,4 +1,4 @@
-.hamburger{
+.hamburger {
     position: fixed;
     top: 4%;
     right: 4%;
@@ -8,15 +8,34 @@
     justify-content: space-between;
     display: none;
     margin-top: rem(7px);
+    cursor: pointer;
+    z-index: 15;
 
-    @include tablets{
+    @include tablets {
         display: inline-flex;
     }
 }
 
-.hamburger__plank{
+.hamburger__plank {
     display: block;
     background: #292929;
     height: rem(4px);
     border-radius: rem(10px);
+    transition: transform .3s, background-color .3s, opacity .3s;
+}
+
+.hamburger--active {
+    .hamburger__plank {
+        &:nth-child(1) {
+            opacity: 0;
+        }
+
+        &:nth-child(2){
+            transform: rotate(45deg);
+        }    
+
+        &:nth-child(3){
+            transform: rotate(-45deg) translateY(-6px) translateX(6px);
+        }
+    }
 }
