@@ -1,0 +1,129 @@
+.products-section {
+    background: $grey;
+}
+
+.product-slider__arrows {
+    display: flex;
+    align-items: center;
+}
+
+.product__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: rem(96px) rem(30px);
+}
+
+.products__item {
+    display: flex;
+    align-items: center;
+}
+
+.product__img {
+    height: rem(452px);
+    width: rem(452px);
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.product__menu {
+    margin-bottom: rem(25px);
+    position: relative;
+    display: inline-block;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.product__menu:hover .prodact__menu-items {
+    display: block;
+}
+
+.prodact__menu-items {
+    position: absolute;
+    background: #FFFFFF;
+    opacity: 80%;
+    padding: rem(28px);
+    width: rem(273px);
+    height: rem(294px);
+    top:0%;
+    left:100%;
+    display: none;
+
+}
+
+.product__list-items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(28px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.product__components {
+    margin-left: rem(59px);
+
+    @include tablets {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &::before {
+            content: url("../img/Ellipse 62.png");
+        }
+    }
+}
+
+.product__title {
+    font-weight: bold;
+    font-size: rem(36px);
+    line-height: rem(42px);
+    color: #292929;
+    text-transform: uppercase;
+}
+
+.product__text {
+    margin-bottom: rem(28px);
+    color: #666666;
+}
+
+.product__features {
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.product__features-item {
+    margin-right: rem(86px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.product__feautures-item-name {
+    color: #666666;
+    font-size: rem(16px);
+}
+
+.product__feautures-item-text {
+    font-size: rem(18px);
+    font-weight: bold;
+}
+
+.product__shop {
+    display: flex;
+}
+
+.product__shop-price {
+    font-size: rem(36px);
+    line-height: rem(60px);
+    margin-right: 13px;
+}
