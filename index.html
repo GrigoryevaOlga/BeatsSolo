@@ -230,161 +230,199 @@
                     </div>
                 </div>
             </section>
-            <section class=section>
-                <div class="container">
+            <section class="section comments">
+                <div class="container container--center">
                     <h2 class="section__title">отзывы</h2>
-                    <div class="reviews">
-                        <div class="reviews__display">
-                            <div class="reviews__display-inner">
-                                <div class="reviews__avatar">
-                                    <img src="./img/Rectangle 7.png" alt="" class="reviews__avatar-img">
+
+                    <ul class="comments__content" id="coments">
+
+                        <li class="comments__main comment active" data-item="1">
+                            <div class="comment__photo">
+                                <img src="./img/Rectangle 7.png" alt="" class="comment__pic">
+                            </div>
+
+                            <div class="comment__desc">
+                                <div class="comment__title">Отличный звук</div>
+                                <div class="comment__text">Я ем малыми порциями, но часто. Это повышает мою
+                                    продуктивность в разы.
+                                    В течение дня сижу за компьютером и часто отходить в кафе или на кухню
+                                    просто не могу себе позволить. А батончик – он всегда под рукой.
+                                    Это приятно и удобно.
                                 </div>
-                                <article class="reviews__content">
-                                    <h3 class="reviews__title">Отличный звук
-                                    </h3>
-                                    <div class="reviews__text">
-                                        <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы.
-                                            В течение дня сижу за компьютером и часто отходить в кафе или на кухню
-                                            просто не могу себе позволить. А батончик – он всегда под рукой.
-                                            Это приятно и удобно.
-                                        </p>
-                                    </div>
-                                    <div class="reviews__autor">Билли Айлиш</div>
-                                </article>
+
+                                <div class="comment__author">Билли Айлиш</div>
                             </div>
-                        </div>
-                        <ul class="reviews__switcher">
-                            <li class="reviews__swither-item interactive-avatar interactive-avatar--active">
-                                <a href="#" class="interactive-avatar__link">
-                                    <img src="./img/Rectangle 7.png" alt="girl" class="interactive-avatar__img">
-                                </a>
-                            </li>
-                            <li class="reviews__swither-item interactive-avatar">
-                                <a href="#" class="interactive-avatar__link">
-                                    <img src="./img/Rectangle 7a.png" alt="boy" class="interactive-avatar__img">
-                                </a>
-                            </li>
-                            <li class="reviews__swither-item interactive-avatar">
-                                <a href="#" class="interactive-avatar__link">
-                                    <img src="./img/Rectangle 7b.png" alt="girl2" class="interactive-avatar__img">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="section order-section section--font-color--white">
-                <div class="container">
-                    <h2 class="section__title order-section__title">закажите доставку</h2>
-                    <form class="form">
-                        <div class="form__col">
-                            <div class="form__row">
-                                <label class="form__block">
-                                    <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input">
-                                </label>
-                                <label class="form__block">
-                                    <div class="form__title">Телефон</div>
-                                    <input type="text" class="form__input" placeholder="89022348912">
-                                </label>
+                        </li>
+
+                        <li class="comments__main comment" data-item="2">
+                            <div class="comment__photo">
+                                <img src="./img/Rectangle 7a.png" alt="" class="comment__pic">
                             </div>
-                            <div class="form__row">
-                                <label class="form__block">
-                                    <div class="form__title">Улица</div>
-                                    <input type="text" class="form__input">
-                                </label>
+
+                            <div class="comment__desc">
+                                <div class="comment__title">Крутой дизайн</div>
+                                <div class="comment__text">После тренировок всегда хочется быстро закинуться
+                                    чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется.
+                                    Протеиновые батончики всегда выручают в этом плане. Спасибо производителю
+                                    за этот качественный и экологичный продукт.
+                                </div>
+
+                                <div class="comment__author">Вадим Грачев</div>
                             </div>
-                            <div class="form__row">
-                                <label class="form__block">
-                                    <div class="form__title">Дом</div>
-                                    <input type="text" class="form__input">
-                                </label>
-                                <label class="form__block">
-                                    <div class="form__title">Корпус</div>
-                                    <input type="text" class="form__input">
-                                </label>
-                                <label class="form__block">
-                                    <div class="form__title">Квартира</div>
-                                    <input type="text" class="form__input">
-                                </label>
-                                <label class="form__block">
-                                    <div class="form__title">Этаж</div>
-                                    <input type="text" class="form__input">
-                                </label>
+                        </li>
+
+                        <li class="comments__main comment " data-item="1">
+                            <div class="comment__photo">
+                                <img src="./img/Rectangle 7b.png" alt="" class="comment__pic">
                             </div>
-                        </div>
-                        <div class="form__col">
-                            <div class="form__row">
-                                <label class="form__block form__block--textarea">
-                                    <div class="form__title">Комментарий</div>
-                                    <textarea class="form__input form__input--textarea"></textarea>
-                                </label>
+
+                            <div class="comment__desc">
+                                <div class="comment__title">На долго хватает заряда</div>
+                                <div class="comment__text">Батончики понравились. На мой взгляд слегка завышена
+                                    цена по сравнению с конкурентами, однако, как говорится – оно того стоит.
+                                    Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать.
+                                    Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один.
+                                    Но это скорее плюс, чем минус.
+                                </div>
+
+                                <div class="comment__author">Мария Орлова</div>
                             </div>
-                            <div class="form__controls">
-                                <label class="radio">
-                                    <input type="radio" name="option" class="radio__elem">
-                                    <div class="radio__visible"></div>
-                                    <div class="radio__title">Потребуется сдача</div>
-                                </label>
-                                <label class="radio">
-                                    <input type="radio" name="option" class="radio__elem">
-                                    <div class="radio__visible"></div>
-                                    <div class="radio__title">Оплата картой</div>
-                                </label>
-                            </div>
-                            <div class="form__controls form__controls--checkbox">
-                                <label class="radio radio--checkbox">
-                                    <input type="checkbox" class="radio__elem">
-                                    <div class="radio__visible"></div>
-                                    <div class="radio__title">Не перезванивать</div>
-                                </label>
-                            </div>
-                            <div class="form__btns">
-                                <input type="submit" value="заказать" class="btn">
-                                <input type="reset" value="Очистить" class="btn btn--theme--transparent">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
-            <section class="section map-section">
-                <footer class="footer">
-                    <div class="container footer__container">
-                        <address class="contacts">
-                            <div class="contacts__adress"> Москва, ул.Новый Арбат, д.31/12</div>
-                            <a href="tel:+78009039090" class="phone-number footer__phone-number">
-                                <svg class="phone-number__icon-elem">
-                                    <use xlink:href="img/sprite.svg#phone"></use>
-                                </svg>
-                                <span class="phone-number__text">8 800 903 90 90</span>
+                        </li>
+
+                    </ul>
+
+                    <ul class="comments__avatars" id="commentAvatars">
+                        <li class="comments__avatar active">
+                            <a href="#" data-open="1" class="comments__link">
+                                <img src="./img/Rectangle 7.png" alt="girl" class="comments__image">
                             </a>
-                        </address>
-                        <ul class="socials">
-                            <li class="socials__item">
-                                <a href="#" class="social__link">
-                                    <img src="./img/vk.png" alt="social icon-vk">
-                                </a>
-                            </li>
-                            <li class="socials__item">
-                                <a href="#" class="social__link">
-                                    <img src="./img/fb.png" alt="social icon-fb">
-                                </a>
-                            </li>
-                            <li class="socials__item">
-                                <a href="#" class="social__link">
-                                    <img src="./img/insta.png" alt="social icon-inst">
-                                </a>
-                            </li>
-                            <li class="socials__item">
-                                <a href="#" class="social__link">
-                                    <img src="./img/tw.png" alt="social icon-tw">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </footer>
-            </section>
+                        </li>
+                        <li class="comments__avatar">
+                            <a href="#" data-open="2" class="comments__link">
+                                <img src="./img/Rectangle 7a.png" alt="boy" class="comments__image">
+                            </a>
+                        </li>
+                        <li class="comments__avatar">
+                            <a href="#" data-open="3" class="comments__link">
+                                <img src="./img/Rectangle 7b.png" alt="girl2" class="comments__image">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
         </div>
+        </section>
+        <section class="section order-section section--font-color--white">
+            <div class="container">
+                <h2 class="section__title order-section__title">закажите доставку</h2>
+                <form class="form">
+                    <div class="form__col">
+                        <div class="form__row">
+                            <label class="form__block">
+                                <div class="form__title">Имя</div>
+                                <input type="text" class="form__input">
+                            </label>
+                            <label class="form__block">
+                                <div class="form__title">Телефон</div>
+                                <input type="text" class="form__input" placeholder="89022348912">
+                            </label>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__block">
+                                <div class="form__title">Улица</div>
+                                <input type="text" class="form__input">
+                            </label>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__block">
+                                <div class="form__title">Дом</div>
+                                <input type="text" class="form__input">
+                            </label>
+                            <label class="form__block">
+                                <div class="form__title">Корпус</div>
+                                <input type="text" class="form__input">
+                            </label>
+                            <label class="form__block">
+                                <div class="form__title">Квартира</div>
+                                <input type="text" class="form__input">
+                            </label>
+                            <label class="form__block">
+                                <div class="form__title">Этаж</div>
+                                <input type="text" class="form__input">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__col">
+                        <div class="form__row">
+                            <label class="form__block form__block--textarea">
+                                <div class="form__title">Комментарий</div>
+                                <textarea class="form__input form__input--textarea"></textarea>
+                            </label>
+                        </div>
+                        <div class="form__controls">
+                            <label class="radio">
+                                <input type="radio" name="option" class="radio__elem">
+                                <div class="radio__visible"></div>
+                                <div class="radio__title">Потребуется сдача</div>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="option" class="radio__elem">
+                                <div class="radio__visible"></div>
+                                <div class="radio__title">Оплата картой</div>
+                            </label>
+                        </div>
+                        <div class="form__controls form__controls--checkbox">
+                            <label class="radio radio--checkbox">
+                                <input type="checkbox" class="radio__elem">
+                                <div class="radio__visible"></div>
+                                <div class="radio__title">Не перезванивать</div>
+                            </label>
+                        </div>
+                        <div class="form__btns">
+                            <input type="submit" value="заказать" class="btn">
+                            <input type="reset" value="Очистить" class="btn btn--theme--transparent">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="section map-section">
+            <footer class="footer">
+                <div class="container footer__container">
+                    <address class="contacts">
+                        <div class="contacts__adress"> Москва, ул.Новый Арбат, д.31/12</div>
+                        <a href="tel:+78009039090" class="phone-number footer__phone-number">
+                            <svg class="phone-number__icon-elem">
+                                <use xlink:href="img/sprite.svg#phone"></use>
+                            </svg>
+                            <span class="phone-number__text">8 800 903 90 90</span>
+                        </a>
+                    </address>
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a href="#" class="social__link">
+                                <img src="./img/vk.png" alt="social icon-vk">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="social__link">
+                                <img src="./img/fb.png" alt="social icon-fb">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="social__link">
+                                <img src="./img/insta.png" alt="social icon-inst">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="social__link">
+                                <img src="./img/tw.png" alt="social icon-tw">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </section>
+    </div>
     </div>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
@@ -409,6 +447,7 @@
     <script src="./jquery-3.6.4.min.js"></script>
 
     <script src="main.js"></script>
+    <script src="comment.js"></script>
 
 </body>
 
