@@ -17,11 +17,13 @@
 .products__item {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .product__img {
+    
     height: rem(452px);
-    width: rem(452px);
+    max-width: rem(452px);
 
     @include tablets {
         display: none;
@@ -126,4 +128,10 @@
     font-size: rem(36px);
     line-height: rem(60px);
     margin-right: 13px;
+}
+
+.bx-wrapper{
+    border:0;
+    background: transparent;
+    box-shadow: none;
 }

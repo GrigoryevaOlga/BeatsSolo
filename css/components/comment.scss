@@ -1,8 +1,8 @@
-.container--center{
+.container--center {
     margin-top: rem(64px);
 }
 
-.comments__content{
+.comments__content {
     min-height: rem(348px);
     background: #F8FAF9;
     padding: rem(42px) rem(107px) rem(42px) rem(42px);
@@ -11,7 +11,7 @@
     overflow: hidden;
     display: flex;
 
-    &:before{
+    &:before {
         content: "";
         display: block;
         width: rem(83px);
@@ -19,56 +19,71 @@
         background: #FFFF;
         border-radius: 50%;
         position: absolute;
-        left:50%;
+        left: 50%;
         transform: translateX(-50%);
-        top:rem(-58px);
+        top: rem(-58px);
+    }
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 }
 
-.comment.active{
-    opacity: 1;
-    left:initial;
-    position: relative;
-}
-
-.comment{
-    display: flex;
-    max-width: 100%;
-    opacity: 0;
-    left:-9999px;
-    transition: opacity 0.3s;
+.comments__main {
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+    opacity: 0;
+    display: flex;
+
+    @include tablets{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-.comment:nth-child(1){
-    position: relative;
-    left:initial;
+.comments__main.active {
+    position: static;
+    opacity: 1;
+    pointer-events: unset;
 }
 
-.comment__photo{
+.comment__photo {
     flex-shrink: 0;
     margin-right: rem(20px);
     width: rem(253px);
-    z-index: 5;
 
     @include tablets {
         width: 50%;
     }
 }
 
-.comment__pic{
+.comment__pic {
     max-width: 100%;
     display: block;
+
+    @include tablets {
+        width: rem(130px);
+        height: rem(130px);
+        margin-bottom: rem(32px);
+    }
 }
 
-.comment__desc{
+.comment__desc {
     padding-top: rem(10px);
     display: flex;
     flex-direction: column;
     margin-left: rem(40px);
 }
 
-.comment__title{
+.comment__title {
     font-weight: bold;
     font-size: rem(24px);
     line-height: rem(28px);
@@ -76,15 +91,13 @@
     margin-top: rem(30px);
 }
 
-.comment__text{
+.comment__text {
     color: #666666;
     font-size: rem(16px);
     margin-bottom: rem(38px);
 }
 
-.comment__author{
-
+.comment__author {
     font-weight: bold;
     line-height: rem(21px);
-    
 }
